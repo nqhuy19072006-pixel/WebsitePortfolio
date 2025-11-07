@@ -1,0 +1,220 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    color: #333;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* Header */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    text-align: center;
+    padding: 35px 20px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+header h1 {
+    color: #5a67d8;
+    font-size: 2.4em;
+    margin-bottom: 8px;
+}
+header p {
+    color: #666;
+    font-size: 1.15em;
+}
+
+/* Menu */
+nav {
+    background: #5a67d8;
+    text-align: center;
+    padding: 14px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    display: inline-block;
+    margin: 0 22px;
+    position: relative;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 10px 0;
+    transition: color 0.3s;
+}
+nav ul li a:hover {
+    color: #c3dafe;
+}
+
+/* Menu con */
+nav ul li ul {
+    display: none;
+    position: absolute;
+    background: #4c51bf;
+    min-width: 200px;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul li ul li {
+    display: block;
+    margin: 0;
+}
+nav ul li ul li a {
+    padding: 12px 18px;
+    display: block;
+    font-size: 0.95em;
+    transition: background 0.3s;
+}
+nav ul li ul li a:hover {
+    background: #5a67d8;
+}
+
+/* Nội dung */
+section {
+    max-width: 900px;
+    margin: 35px auto;
+    background: white;
+    padding: 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.12);
+}
+
+h2 {
+    color: #5a67d8;
+    font-size: 1.9em;
+    margin-bottom: 18px;
+    border-bottom: 3px solid #a0a0ff;
+    padding-bottom: 8px;
+    display: inline-block;
+}
+
+/* Avatar */
+.avatar {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin: 18px auto;
+    border: 5px solid #5a67d8;
+    box-shadow: 0 5px 15px rgba(90, 103, 216, 0.3);
+}
+
+/* Dự án */
+.project {
+    background: #f8f9ff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    border-left: 6px solid #5a67d8;
+    transition: all 0.3s ease;
+}
+.project:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(90, 103, 216, 0.18);
+}
+
+/* ẢNH DỰ ÁN: TỰ ĐỘNG THU NHỎ, KHÔNG TRÀN */
+.project img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    background: #fff;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 14px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.project h3 {
+    color: #4c51bf;
+    margin: 12px 0 8px;
+    font-size: 1.35em;
+}
+.project p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Nút Xem thêm */
+.more-btn {
+    text-align: center;
+    margin: 25px 0;
+}
+.more-btn a {
+    display: inline-block;
+    background: #5a67d8;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(90, 103, 216, 0.3);
+}
+.more-btn a:hover {
+    background: #4c51bf;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(90, 103, 216, 0.4);
+}
+
+/* Dự án mở rộng */
+.more-projects {
+    display: none;
+}
+:target.more-projects {
+    display: block;
+}
+
+/* Liên hệ */
+.contact-list {
+    list-style: none;
+    font-size: 1.05em;
+}
+.contact-list li {
+    margin: 12px 0;
+    padding-left: 5px;
+}
+.contact-list strong {
+    color: #5a67d8;
+}
+.contact-list a {
+    color: #5a67d8;
+    text-decoration: none;
+    font-weight: 500;
+}
+.contact-list a:hover {
+    text-decoration: underline;
+    color: #3b3fb8;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 22px;
+    background: rgba(255, 255, 255, 0.95);
+    color: #666;
+    font-size: 0.95em;
+    margin-top: 40px;
+    box-shadow: 0 -3px 12px rgba(0,0,0,0.08);
+}
